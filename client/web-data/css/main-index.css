@@ -1,0 +1,158 @@
+@font-face {
+    font-family: main-font;
+    src: url("/assets/font-mikhak.ttf");
+}
+
+body {
+    font-family: main-font;
+    background-image: url("/assets/back.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+    max-width: 100%;
+    color: aliceblue;
+}
+
+.name {
+    color:rgb(0, 158, 0);
+}
+
+.main {
+    background-color: rgba(240, 248, 255, 0.363);
+    width: fit-content;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 3em;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+.open-pack {
+    background-color: rgba(240, 248, 255, 0.363);
+    width: fit-content;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 3em;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+.open-pack > h1 {
+    color: rgb(216, 240, 6);
+}
+
+.players {
+    background-color: rgba(240, 248, 255, 0.363);
+    width: fit-content;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 3em;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+.players-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.player {
+    /*background: white;*/
+    display: block;
+    color: purple;
+    font-size: 8pt;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+}
+
+.player > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.player-img {
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    background-color: gold;
+    border-radius: 3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: block;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.btn:hover {
+    background-color: rgb(219, 188, 13);
+}
+
+.disabled {
+    background: gray;
+    cursor: default;
+    opacity: 70%;
+}
+
+.disabled:hover {
+    background: gray !important;
+    cursor: default !important;
+}
+
+input[type="text"] {
+    background-color: rgba(240, 248, 255, 0.473);
+    border-radius: 5rem;
+    color:black;
+    text-align: center;
+    font-family: main-font;
+    width: 100%;
+    font-size: 15pt;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.774);
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+/*Yoink, My Glow Tool Now*/
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fdf902, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #d1bf1c, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}

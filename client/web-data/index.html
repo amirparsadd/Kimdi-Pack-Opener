@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimdi Club | کیمدی کلاب</title>
+    <link rel="stylesheet" href="/web-data/css/main-index.css">
+</head>
+<body>
+    <div class="content">
+        <div class="center">
+            <div class="main" id="main-container">
+                <h1 class="name">کیمدی کلاب</h1>
+                <h2 class="trademark">مرجع باز کردن بسته های کیمدی</h2>
+                <input type="text" name="کد بسته" id="pack-code-input" class="pack-code-input" placeholder="کد را وارد کنید">
+                <a href="#" class="btn" id="btn-open-pack">بزن بریم</a>
+            </div>
+            <div class="open-pack" id="pack-container">
+                <h1 class="glow">باز کردن بسته</h1>
+                <h2 id="pack-type">درحال جستجو</h2>
+                <img src="/assets/unknown-pack.png" alt="پک ناشناس" id="pack-img" width="50%">
+                <a href="#" class="btn disabled" id="btn-open">بازش کن</a>
+                <a href="#" class="btn" id="btn-back">بازگشت</a>
+            </div>
+            <div class="players">
+                <h1>بازیکن های موجود</h1>
+                <div class="players-list" id="players-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/web-data/js/main-index.js"></script>
+</body>
+</html>
